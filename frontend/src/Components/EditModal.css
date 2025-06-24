@@ -1,0 +1,95 @@
+.edit-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit-modal-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .edit-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .edit-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .edit-modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-modal-body {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .edit-modal-body label {
+    font-weight: bold;
+  }
+  
+  .edit-modal-body input,
+  .edit-modal-body textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .edit-modal-body textarea {
+    resize: vertical;
+  }
+  
+  .edit-image-preview {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .edit-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .edit-cancel-btn,
+  .edit-confirm-btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .edit-cancel-btn {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .edit-confirm-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  

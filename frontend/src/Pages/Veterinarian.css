@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body h3 {
+    /* font-family: "Monoton", sans-serif; */
+    padding: 20px;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titleofveterinarian {
+    font-family: "Monoton", sans-serif;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.Appointment {
+    font-family: "Monoton", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.meet-professionals {
+    font-family: "Monoton", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.our-services {
+    font-family: "Monoton", sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+.Vservices,
+
+
+.professionals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+   
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.Card:hover {
+    transform: scale(1.05);
+}
+
+.Card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: darkslategrey;
+}
+
+.button-booknow {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+}
+
+.button-booknow:hover {
+    background-color: brown;
+    color: white;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 30s linear infinite;
+}
+
+.slides img {
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}

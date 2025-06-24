@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.home_section {
+    background-color: whitesmoke;
+}
+
+.logoofdog {
+    height: 70px;
+}
+
+.home {
+    position: relative;
+}
+
+.hometitle {
+    font-family: "Monoton", sans-serif;
+    font-size: 60px;
+    color: antiquewhite;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+
+.learn_btn {
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+}
+
+
+.Top_Categories {
+    font-family: "Monoton", sans-serif;
+    color: brown;
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.home_category {
+    background-color: rgb(255, 249, 249);
+    width: 100%;
+    min-height: 100vh;
+
+
+}
+
+.images_container {
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.each_pet_image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.dog_card {
+    text-align: center;
+    /* margin: 10px; */
+}
+
+.dog_name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+
+
+.Featured_Products {
+    font-family: "Monoton", sans-serif;
+    color: brown;
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+
+
+
+
+.container .card .icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #fff;
+}
+
+.container .card .slide {
+    width: 330px;
+    height: 290px;
+    transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+    transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card:hover .slide.slide2 {
+    transform: translateY(0);
+}
+
+.container .card .slide.slide2::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background: #2c73df; */
+}
+
+.container .card .slide.slide2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.container .card .slide.slide2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+}
+
+/* Product title and text */
+.product-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Badges container */
+.card-info-badges {
+    display: flex;
+    gap: 100px;
+    margin: 10px 0 17px;
+    flex-wrap: wrap;
+}
+
+/* Badge styles */
+.badge {
+    /* padding: 6px 14px; */
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.badge.price {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+.badge.brand {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.badge:hover {
+    transform: scale(1.05);
+    color: black;
+}
+
+/* Add to cart button */
+.btn-cart {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-cart:hover {
+    background-color: #e74c3c;
+    transform: translateY(-2px);
+}
+
+
+.Cart_button {
+    
+    margin-left: -8px;
+
+
+}
+
+.button-LM {
+    height: 50px;
+    width: 140px;
+    font-size: 18px;
+}
+
+.button-LM:hover {
+    color: white;
+    background-color: brown;
+}
+
+.dot {
+    color: white;
+    position: absolute;
+    top: 2;
+    right: 4;
+    border-radius: 120%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    background-color: darkorange;
+}
+/* General adjustments */
+@media (max-width: 1200px) {
+    .images_container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .images_container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .home .hometitle {
+      font-size: 2rem;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .images_container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      min-height: 100vh;
+      margin-bottom: 100px;
+    }
+  
+    .dog_card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .hometitle {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .product-title {
+      font-size: 1rem;
+    }
+  
+    .product-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .images_container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .home img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .home .hometitle {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    .btn-cart {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .row-cols-md-3 > * {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

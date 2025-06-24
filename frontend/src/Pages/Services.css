@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+body h1{
+    font-family: "Monoton", sans-serif;
+    padding: 20px;
+    color: black;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+.card h2{
+  font-weight: bold;
+  color: brown;
+}
+.card  {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.like-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: gray;
+    transition: color 0.3s;
+}
+.liked {
+    color: red;
+}

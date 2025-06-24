@@ -1,0 +1,132 @@
+.footer {
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: black;
+}
+
+.footer-nav {
+    flex: 1;
+    margin-bottom: 20px;
+
+}
+
+.footer-nav h4 {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: brown;
+}
+
+.footer-contact {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-contact h4 {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    color: black;
+}
+
+.footer-social {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer-social h4 {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: 40px;
+}
+
+.social-icon {
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: cadetblue;
+    transform: scale(1.1);
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo,
+    .footer-nav,
+    .footer-contact,
+    .footer-social {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .footer-nav ul li {
+        text-align: center;
+    }
+}

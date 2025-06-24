@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+.contact-section {
+    padding: 0px 0;
+    background-color: whitesmoke;
+}
+.contact-heading {
+    font-family: "Monoton", sans-serif;
+    font-size: 40px;
+    color: brown;
+    font-weight: bold;
+}
+.para{
+    color: black;
+}
+.contact-img{
+  height: 270px;
+  width: 540px;
+}
+
+input{
+  height: 50px;
+}
+
+.Submit_button:hover{
+background-color: darkslategray;
+}

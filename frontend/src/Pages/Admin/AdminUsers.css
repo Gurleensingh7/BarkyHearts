@@ -1,0 +1,89 @@
+.admin-users {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-users h1 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .users-table-container {
+    overflow-x: auto;
+  }
+  
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .users-table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .users-table tr:hover {
+    background-color: #f8fafc;
+  }
+  
+  .role-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .role-badge.admin {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+  }
+  
+  .role-badge.user {
+    background-color: #e0f2fe;
+    color: #0369a1;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .actions button {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .actions .edit {
+    background-color: #e0f2fe;
+    color: #0369a1;
+  }
+  
+  .actions .edit:hover {
+    background-color: #bae6fd;
+  }
+  
+  .actions .delete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  .actions .delete:hover {
+    background-color: #fecaca;
+  }

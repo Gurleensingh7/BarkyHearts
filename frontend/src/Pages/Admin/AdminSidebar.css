@@ -1,0 +1,79 @@
+.admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #1e293b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #334155;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  .sidebar-nav {
+    flex: 1;
+    padding: 1rem 0;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-nav li a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  .sidebar-nav li a:hover {
+    background-color: #334155;
+    color: white;
+  }
+  
+  .sidebar-nav li a .icon {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .sidebar-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #334155;
+  }
+  
+  .sidebar-footer button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #e2e8f0;
+    cursor: pointer;
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  
+  .sidebar-footer button .icon {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .sidebar-footer button:hover {
+    color: white;
+  }

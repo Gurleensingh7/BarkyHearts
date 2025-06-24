@@ -1,0 +1,99 @@
+.admin-orders {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-orders h1 {
+    font-size: 1.5rem;
+    color: #1e293b;
+    margin: 0 0 1.5rem 0;
+  }
+  
+  .orders-table-container {
+    overflow-x: auto;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .orders-table th {
+    background-color: #f8fafc;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f8fafc;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.shipped {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+  }
+  
+  .status-badge.processing {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .status-badge.delivered {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+  
+  .status-badge.cancelled {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .actions button {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .actions .view {
+    background-color: #e0f2fe;
+    color: #0369a1;
+  }
+  
+  .actions .view:hover {
+    background-color: #bae6fd;
+  }
+  
+  .actions .update {
+    background-color: #ecfccb;
+    color: #4d7c0f;
+  }
+  
+  .actions .update:hover {
+    background-color: #d9f99d;
+  }

@@ -1,0 +1,28 @@
+@media (max-width: 480px) {
+    .hometitle {
+        font-size: 1.2rem;
+    }
+    
+
+    .btn-outline-light {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        margin-bottom:-10px;
+    }
+
+    /* .Featured_Products{
+        margin-top: 3100px;
+    } */
+
+    /* about page */
+
+    .title_ChooseUs{
+        font-size: 30px;
+    }
+
+    .dog_image{
+        height: 300px;
+        width: 400px;
+    }
+}
+
