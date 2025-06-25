@@ -20,7 +20,7 @@ function Cart() {
     const user = JSON.parse(localStorage.getItem('User'));
     if (user?.email) {
       try {
-        const res = await fetch('http://localhost:8000/api/Getcart', {
+        const res = await fetch('https://barkyhearts-1.onrender.com/api/Getcart', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: user.email }),

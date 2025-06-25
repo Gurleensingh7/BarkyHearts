@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8000/api/post/contact", formData);
+      const res = await axios.post("https://barkyhearts-1.onrender.com/api/post/contact", formData);
       if (res.status === 201) {
         alert("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });

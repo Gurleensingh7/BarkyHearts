@@ -23,7 +23,7 @@ const Booking = () => {
         };
 
         try {
-            const response = await fetch("http://localhost:8000/api/bookings", {
+            const response = await fetch("https://barkyhearts-1.onrender.com/api/bookings", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

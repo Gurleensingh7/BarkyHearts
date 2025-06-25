@@ -14,11 +14,7 @@ const server = express();
 //middleware
 server.use(express.json());
 
-server.use(
-    cors({
-        origin: ["http://localhost:5173"],
-    })
-);
+server.use(cors());
 
 
 //calling database connection function

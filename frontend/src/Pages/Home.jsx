@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/products/Get_All_Products");
+        const response = await fetch("https://barkyhearts-1.onrender.com/api/products/Get_All_Products");
         const data = await response.json();
 
         if (data.success) {
@@ -41,7 +41,7 @@ const Home = () => {
     }
   
     try {
-      const response = await axios.post('http://localhost:8000/api/cart', {
+      const response = await axios.post('https://barkyhearts-1.onrender.com/api/cart', {
         email: user.email,
         product
       });
