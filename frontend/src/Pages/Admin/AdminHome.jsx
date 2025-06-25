@@ -9,7 +9,7 @@ const AdminHome = () => {
   useEffect(() => {
     const getAllUsers = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/getAllUsersWithOrders');
+        const res = await fetch('https://barkyhearts-1.onrender.com/api/getAllUsersWithOrders');
         const data = await res.json();
         setUsers(data.users || []);
         setOrders(data.orders || []); // If response includes orders
@@ -20,7 +20,7 @@ const AdminHome = () => {
 
     const fetchProducts = async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/products/Get_all_Products');
+        const res = await fetch('https://barkyhearts-1.onrender.com/api/products/Get_all_Products');
         const data = await res.json();
         console.log(data);
         setProducts(data.Data || []);

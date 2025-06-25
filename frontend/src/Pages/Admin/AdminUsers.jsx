@@ -7,7 +7,7 @@ const AdminUsers = () => {
 
    const getAllUsers = async()=>{
     try {
-      const res = await fetch('http://localhost:8000/api/getAllUsersWithOrders');
+      const res = await fetch('https://barkyhearts-1.onrender.com/api/getAllUsersWithOrders');
       const data = await res.json();
       console.log(data.users)
       setUsers(data.users)

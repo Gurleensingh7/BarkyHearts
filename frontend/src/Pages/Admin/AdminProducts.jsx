@@ -14,7 +14,7 @@ const AdminProducts = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/products/Get_all_Products');
+      const res = await fetch('https://barkyhearts-1.onrender.com/api/products/Get_all_Products');
       const data = await res.json();
       console.log(data.Data[0])
       setProducts(data.Data)

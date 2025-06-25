@@ -22,7 +22,7 @@ const EditProductModal = ({ isOpen, onClose, product }) => {
   const handleEdit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put(`http://localhost:8000/api/products/update/${product._id}`, {
+      const res = await axios.put(`https://barkyhearts-1.onrender.com/api/products/update/${product._id}`, {
         title,
         price,
         description,

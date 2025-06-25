@@ -46,7 +46,7 @@ function Cart() {
     if (!user?.email) return;
 
     try {
-      const res = await fetch('http://localhost:8000/api/Removecartitem', {
+      const res = await fetch('https://barkyhearts-1.onrender.com/api/Removecartitem', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: user.email, productId }),
@@ -69,7 +69,7 @@ function Cart() {
     if (!user?.email) return;
 
     try {
-      const res = await fetch('http://localhost:8000/api/updateCartQuantity', {
+      const res = await fetch('https://barkyhearts-1.onrender.com/api/updateCartQuantity', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: user.email, productId, quantity }),
