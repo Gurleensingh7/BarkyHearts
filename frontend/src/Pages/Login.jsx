@@ -11,7 +11,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://barkyhearts-1.onrender.com//api/loginUser', {
+      const res = await axios.post('https://barkyhearts-1.onrender.com/api/loginUser', {
         email,
         password,
       });
