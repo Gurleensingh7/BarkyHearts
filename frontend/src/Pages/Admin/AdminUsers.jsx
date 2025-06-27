@@ -9,7 +9,7 @@ const AdminUsers = () => {
     try {
       const res = await fetch('https://barkyhearts-1.onrender.com/api/getAllUsersWithOrders');
       const data = await res.json();
-      console.log(data.users)
+      // console.log(data.users)
       setUsers(data.users)
     } catch (error) {
       console.log('Error at fetching users :',error)

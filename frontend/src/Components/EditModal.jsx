@@ -28,7 +28,7 @@ const EditProductModal = ({ isOpen, onClose, product }) => {
         description,
         imageURL
       });
-      console.log(res.data);
+      // console.log(res.data);
       onClose(); // Close modal on success
     } catch (error) {
       console.error('Error updating product:', error);

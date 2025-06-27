@@ -22,7 +22,7 @@ const AdminHome = () => {
       try {
         const res = await fetch('https://barkyhearts-1.onrender.com/api/products/Get_all_Products');
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         setProducts(data.Data || []);
       } catch (error) {
         console.log('Error fetching products:', error);
