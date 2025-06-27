@@ -8,7 +8,7 @@ const DeleteProductModal = ({ isOpen, onClose, product }) => {
   const handleDelete = async () => {
     try {
       const res = await axios.delete(`https://barkyhearts-1.onrender.com/api/products/delete/${product._id}`);
-      console.log(res.data);
+      // console.log(res.data);
       onClose();
     } catch (error) {
       console.error('Error deleting product:', error);
