@@ -23,7 +23,6 @@ const AddProductModal = ({ isOpen, onClose }) => {
   
     try {
       const response = await axios.post('https://barkyhearts-1.onrender.com/api/products/add_new_product', product);
-      console.log('Product added:', response.data);
   
       // Reset form and close modal
       setProduct({
